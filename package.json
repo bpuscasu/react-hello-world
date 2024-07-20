@@ -1,0 +1,36 @@
+{
+  "name": "@musify/react",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "format": "prettier src --check",
+    "format:write": "prettier src --write",
+    "postinstall": "husky || true",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "@emotion/react": "11.12.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-conventional": "19.2.2",
+    "@emotion/babel-plugin": "11.12.0",
+    "@vitejs/plugin-react": "4.3.1",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "eslint-plugin-react": "7.34.3",
+    "eslint-plugin-react-hooks": "4.6.2",
+    "eslint-plugin-react-refresh": "0.4.7",
+    "husky": "9.1.1",
+    "lint-staged": "15.2.7",
+    "prettier": "3.3.3",
+    "vite": "5.3.4"
+  },
+  "packageManager": "yarn@4.3.1"
+}
