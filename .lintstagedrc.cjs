@@ -8,7 +8,7 @@ const removeIgnoredFiles = async (files) => {
     }),
   );
   const filteredFiles = files.filter((_, i) => !isIgnored[i]);
-  return filteredFiles.join(" ");
+  return filteredFiles.map((fileName) => `"${fileName}"`).join(" ");
 };
 
 module.exports = {
